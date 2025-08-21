@@ -1,0 +1,11 @@
+[package]
+name = "chat_server"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+chrono = { version = "0.4.41", features = ["serde"] }
+diesel = { version = "2.2.12", features = ["chrono"] }
+serde = "1.0.219"
+tokio = { version = "1.47.1", features = ["full"] }
+warp = "0.4.2"
